@@ -32,7 +32,7 @@ def init_database():
 
 # Initial database if empty
 initial_activities = {
-    "Chess Club": {
+    "♟️ Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
         "schedule": "Mondays and Fridays, 3:15 PM - 4:45 PM",
         "schedule_details": {
@@ -43,7 +43,7 @@ initial_activities = {
         "max_participants": 12,
         "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
     },
-    "Programming Class": {
+    "💻 Programming Class": {
         "description": "Learn programming fundamentals and build software projects",
         "schedule": "Tuesdays and Thursdays, 7:00 AM - 8:00 AM",
         "schedule_details": {
@@ -54,7 +54,7 @@ initial_activities = {
         "max_participants": 20,
         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
     },
-    "Morning Fitness": {
+    "🏃 Morning Fitness": {
         "description": "Early morning physical training and exercises",
         "schedule": "Mondays, Wednesdays, Fridays, 6:30 AM - 7:45 AM",
         "schedule_details": {
@@ -65,7 +65,7 @@ initial_activities = {
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
     },
-    "Soccer Team": {
+    "⚽ Soccer Team": {
         "description": "Join the school soccer team and compete in matches",
         "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:30 PM",
         "schedule_details": {
@@ -76,7 +76,7 @@ initial_activities = {
         "max_participants": 22,
         "participants": ["liam@mergington.edu", "noah@mergington.edu"]
     },
-    "Basketball Team": {
+    "🏀 Basketball Team": {
         "description": "Practice and compete in basketball tournaments",
         "schedule": "Wednesdays and Fridays, 3:15 PM - 5:00 PM",
         "schedule_details": {
@@ -87,7 +87,7 @@ initial_activities = {
         "max_participants": 15,
         "participants": ["ava@mergington.edu", "mia@mergington.edu"]
     },
-    "Art Club": {
+    "🎨 Art Club": {
         "description": "Explore various art techniques and create masterpieces",
         "schedule": "Thursdays, 3:15 PM - 5:00 PM",
         "schedule_details": {
@@ -98,7 +98,7 @@ initial_activities = {
         "max_participants": 15,
         "participants": ["amelia@mergington.edu", "harper@mergington.edu"]
     },
-    "Drama Club": {
+    "🎭 Drama Club": {
         "description": "Act, direct, and produce plays and performances",
         "schedule": "Mondays and Wednesdays, 3:30 PM - 5:30 PM",
         "schedule_details": {
@@ -109,7 +109,7 @@ initial_activities = {
         "max_participants": 20,
         "participants": ["ella@mergington.edu", "scarlett@mergington.edu"]
     },
-    "Math Club": {
+    "🔢 Math Club": {
         "description": "Solve challenging problems and prepare for math competitions",
         "schedule": "Tuesdays, 7:15 AM - 8:00 AM",
         "schedule_details": {
@@ -120,7 +120,7 @@ initial_activities = {
         "max_participants": 10,
         "participants": ["james@mergington.edu", "benjamin@mergington.edu"]
     },
-    "Debate Team": {
+    "💬 Debate Team": {
         "description": "Develop public speaking and argumentation skills",
         "schedule": "Fridays, 3:30 PM - 5:30 PM",
         "schedule_details": {
@@ -131,7 +131,7 @@ initial_activities = {
         "max_participants": 12,
         "participants": ["charlotte@mergington.edu", "amelia@mergington.edu"]
     },
-    "Weekend Robotics Workshop": {
+    "🤖 Weekend Robotics Workshop": {
         "description": "Build and program robots in our state-of-the-art workshop",
         "schedule": "Saturdays, 10:00 AM - 2:00 PM",
         "schedule_details": {
@@ -142,7 +142,7 @@ initial_activities = {
         "max_participants": 15,
         "participants": ["ethan@mergington.edu", "oliver@mergington.edu"]
     },
-    "Science Olympiad": {
+    "🔬 Science Olympiad": {
         "description": "Weekend science competition preparation for regional and state events",
         "schedule": "Saturdays, 1:00 PM - 4:00 PM",
         "schedule_details": {
@@ -153,7 +153,7 @@ initial_activities = {
         "max_participants": 18,
         "participants": ["isabella@mergington.edu", "lucas@mergington.edu"]
     },
-    "Sunday Chess Tournament": {
+    "♖ Sunday Chess Tournament": {
         "description": "Weekly tournament for serious chess players with rankings",
         "schedule": "Sundays, 2:00 PM - 5:00 PM",
         "schedule_details": {
@@ -164,7 +164,7 @@ initial_activities = {
         "max_participants": 16,
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
     },
-    "Manga Maniacs": {
+    "📚 Manga Maniacs": {
         "description": "Unleash your inner otaku! Dive into epic adventures, master the art of manga storytelling, and debate whether ninjas or pirates reign supreme. From shonen battles to slice-of-life feels - all manga genres welcome!",
         "schedule": "Tuesdays, 5:00 PM - 6:00 PM",
         "schedule_details": {
