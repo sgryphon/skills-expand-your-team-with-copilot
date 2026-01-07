@@ -472,6 +472,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Function to generate social sharing URLs
+  function generateShareUrls(activityName, description, schedule) {
+    const baseUrl = window.location.origin;
+    const activityUrl = `${baseUrl}/?activity=${encodeURIComponent(activityName)}`;
+    
+    // Create share text
+    const shareText = `Check out ${activityName} at Mergington High School! ${description}`;
+    const emailSubject = `Join me in ${activityName}`;
+    const emailBody = `Hey! I wanted to share this activity with you:\n\n${activityName}\n${description}\n\nSchedule: ${schedule}\n\nLearn more at: ${baseUrl}`;
+    
+    return {
+      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(activityUrl)}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(activityUrl)}`,
+      email: `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+    };
+  }
+
   // Function to render a single activity card
   function renderActivityCard(name, details) {
     const activityCard = document.createElement("div");
@@ -498,6 +515,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Format the schedule using the new helper function
     const formattedSchedule = formatSchedule(details);
+
+    // Generate share URLs
+    const shareUrls = generateShareUrls(name, details.description, formattedSchedule);
 
     // Create activity tag
     const tagHtml = `
@@ -528,6 +548,18 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="tooltip-text">Regular meetings at this time throughout the semester</span>
       </p>
       ${capacityIndicator}
+      <div class="social-share-container">
+        <span class="social-share-label">Share:</span>
+        <a href="${shareUrls.twitter}" target="_blank" rel="noopener noreferrer" class="social-share-button twitter" aria-label="Share on Twitter" title="Share on Twitter">
+          𝕏
+        </a>
+        <a href="${shareUrls.facebook}" target="_blank" rel="noopener noreferrer" class="social-share-button facebook" aria-label="Share on Facebook" title="Share on Facebook">
+          f
+        </a>
+        <a href="${shareUrls.email}" class="social-share-button email" aria-label="Share via Email" title="Share via Email">
+          ✉
+        </a>
+      </div>
       <div class="participants-list">
         <h5>Current Participants:</h5>
         <ul>
